@@ -1,0 +1,10 @@
+.place {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 2;
+  margin: 0 auto 80px;
+}
+
+.place:last-child {
+  margin: 0 auto 0;
+}

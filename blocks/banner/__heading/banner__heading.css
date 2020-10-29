@@ -1,0 +1,7 @@
+.banner__heading {
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}

@@ -1,0 +1,16 @@
+.banner__layout {
+  background: #2A2C2F;
+  opacity: 0;
+  z-index: 2;
+  width: 1184px;
+  height: 740px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  transition: .5s ease;
+/*   transform: translate;
+  -ms-transform: translate; */
+}
+
+.banner__layout:hover {
+  opacity: 0.8;
+}
