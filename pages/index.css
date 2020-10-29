@@ -17,3 +17,5 @@
 @import url(../blocks/intro/__list/intro__list.css);
 @import url(../blocks/intro/__list-item/intro__list-item.css);
 @import url(../blocks/intro/__list-item_digit/intro__list-item_digit.css);
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__pic/gallery__pic.css);

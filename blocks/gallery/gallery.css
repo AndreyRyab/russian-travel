@@ -1,0 +1,23 @@
+.gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-template-rows: auto;
+  gap: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* {
+  min-height: calc(100vh - 80px);
+  display: grid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  grid-template-columns: repeat(5, auto) 200px;
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+  padding: 0px 60px 60px;
+} */
