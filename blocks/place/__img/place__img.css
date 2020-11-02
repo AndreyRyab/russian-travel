@@ -5,3 +5,16 @@
   align-self: start;
   justify-self: start;
 }
+
+@media (max-width: 1023px) {
+  .place__img {
+    width: 93%;
+  }
+}
+
+@media (max-width: 767px) {
+  .place__img {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}

@@ -8,3 +8,12 @@
   white-space: pre-line;
   max-width: 90vh;
 }
+
+@media (max-width: 767px) {
+  .banner__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 16px;
+    white-space: unset;
+  }
+}

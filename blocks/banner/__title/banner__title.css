@@ -9,3 +9,10 @@
   text-decoration: none;
   white-space: pre-line;
 }
+
+@media (max-width: 767px) {
+  .banner__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}
