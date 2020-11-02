@@ -29,12 +29,261 @@
 @import url(../blocks/place/__text/place__text.css);
 @import url(../blocks/place/__paragraph/place__paragraph.css);
 @import url(../blocks/banner/banner.css);
+@import url(../blocks/banner/__link/banner__link.css);
+@import url(../blocks/banner/__layout/banner__layout.css);
 @import url(../blocks/banner/__title/banner__title.css);
 @import url(../blocks/banner/__subtitle/banner__subtitle.css);
 @import url(../blocks/banner/__heading/banner__heading.css);
-@import url(../blocks/banner/__layout/banner__layout.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
-@import url(../blocks/footer/__link/__link_inline/footer__link_inline.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+
+
+@media (min-width: 1280px) {
+.cover__title {
+  margin: 56px 0 0;
+}
+
+.intro__text {
+  max-width: 690px;
+}
+
+.place:nth-child(3) .place__paragraph{
+  margin-bottom: 27px;
+}
+
+}
+
+
+/* ноуты */
+@media (max-width: 1279px) {
+
+
+  .cover {
+    margin: 28px 48px 0;
+  }
+  .intro {
+    margin-left: 48px;
+  }
+  .intro__text {
+    max-width: 690px;
+  }
+
+  .gallery {
+    margin: 0 48px 92px;
+    gap: 14px;
+  }
+
+  .places {
+    margin: 0 48px 0;
+  }
+
+  .place__img {
+    width: 95%;
+  }
+
+  .place:nth-child(odd) .place__paragraph{
+    margin-bottom: 27px;
+  }
+
+}
+
+
+/* таблетки  */
+@media (max-width: 1023px) {
+  .header {
+    padding: 0 24px 0;  
+  }
+
+  .content {
+    max-width: 1023px;
+  }
+
+  .cover__caption {
+    margin-left: 24px;
+  }
+
+  .cover {
+    margin: 0;
+  }
+
+  .intro {
+    max-width: 720px;
+    margin: 88px 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: 0 24px 80px;
+    gap: 16px;
+  }
+
+  .places {
+    margin: 0 24px 80px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .place__text {
+    margin: 0;
+  }
+
+  .place__website {
+    margin: 0;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .place__img {
+    width: 94%;
+  }
+
+}
+
+/* телефоны */
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+  .root {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  }
+
+  .header {
+    margin: 16px auto 0;
+    padding: 0 16px 0;
+  }
+
+  .header__logo {
+      width: 142px;
+    }
+
+  .header__lang-link {
+    font-size: 18px;
+  }
+
+  .cover {
+    margin: 0;
+  }
+
+  .cover__caption {
+    margin-left: 18px;
+  }
+
+  .cover__title {
+    margin: 48px auto 0;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .cover__subtitle {
+    font-size: 16px;
+    margin-top: 16px;
+    max-width: 288px;
+    line-height: 1.25;
+  }
+
+  .cover__img {
+    margin: 40px 0 0;
+    width: 100%;
+  }
+
+  .intro {
+    margin: 64px 16px;
+  }
+
+  .intro__text {
+    margin-bottom: 34px;
+  }
+
+  .places {
+    width: 100%;
+    margin: 0 0 66px;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+  }
+
+ .place .place__paragraph:first-child {
+    margin-bottom: 25px;
+  }
+
+  .place .place__paragraph:nth-child(2) {
+    margin: 0;
+  }
+  
+  .place__title {
+    margin: 49px 16px 32px;
+    white-space: unset;
+  }
+
+  .place:first-child .place__title {
+    margin-top: 0;
+  }
+
+  .place:nth-child(3) .place__title {
+    margin-top: 50px;
+  }
+
+  .place__text {
+    margin: 0 16px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    margin: 0 16px 64px;
+    gap: 12px;
+  }
+
+  .place__img {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+  .place__website {
+    display: none;
+  }
+  
+  .footer {
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+
+  .footer__links {
+    /* flex-direction: column; */
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .footer__link {
+    display: block;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .footer__copyright {
+    line-height: 1;
+  }
+}

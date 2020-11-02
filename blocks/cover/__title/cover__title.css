@@ -1,10 +1,10 @@
 .cover__title {
   text-rendering: optimizeLegibility;
-  margin: 0;
-  font-family: Inter;
+  margin: 48px auto 0;
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
   line-height: 1.04;
   text-align: center;
+  white-space: pre-line;
   }
