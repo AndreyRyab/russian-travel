@@ -1,5 +1,4 @@
 .banner__subtitle {
-/*   max-width: 360px; */
   margin: 32px auto 0;
   font-style: normal;
   font-weight: normal;
@@ -7,4 +6,5 @@
   line-height: 1.22;
   text-align: center;
   white-space: pre-line;
+  max-width: 90vh;
 }

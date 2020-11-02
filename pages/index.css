@@ -53,16 +53,25 @@
   margin-bottom: 27px;
 }
 
+.banner:hover:before {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 }
 
 
 /* ноуты */
 @media (max-width: 1279px) {
 
-
   .cover {
     margin: 28px 48px 0;
   }
+
+  .cover__img {
+    margin: 56px 0 0;
+  }
+  
   .intro {
     margin-left: 48px;
   }
@@ -79,12 +88,21 @@
     margin: 0 48px 0;
   }
 
-  .place__img {
-    width: 95%;
+  .place {
+    column-gap: 32px;
   }
 
   .place:nth-child(odd) .place__paragraph{
     margin-bottom: 27px;
+  }
+
+  .banner {
+    padding: 30vh 0;
+  }
+  
+  .banner:hover:before {
+    opacity: 0.8;
+    cursor: pointer;
   }
 
 }
@@ -116,12 +134,21 @@
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    margin: 0 24px 80px;
+    margin: 0 24px 88px;
     gap: 16px;
   }
 
   .places {
-    margin: 0 24px 80px;
+    margin: 88px 24px 90px;
+  }
+
+  .place {
+    column-gap: 28px;
+    margin-bottom: 73px;
+  }
+
+  .place:nth-child(4) {
+    margin-bottom: 72px;
   }
 
   .place__title {
@@ -143,8 +170,23 @@
   }
 
   .place__img {
-    width: 94%;
+    width: 93%;
   }
+
+  .banner {
+    margin: 90px 0 88px;
+    padding: 24vh 0;
+  }
+
+  .banner:hover:before {
+    display: none;
+  }
+
+  .footer {
+    margin: 0 24px 24px;
+  }
+
+
 
 }
 
@@ -202,13 +244,22 @@
     margin: 64px 16px;
   }
 
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
   .intro__text {
     margin-bottom: 34px;
   }
 
+  .gallery {
+    margin-bottom: 0;
+  }
+
   .places {
     width: 100%;
-    margin: 0 0 66px;
+    margin: 64px 0 66px;
   }
 
   .place {
@@ -218,11 +269,16 @@
     margin: 0;
   }
 
+
+  .place:nth-child(4) {
+    margin-bottom: 0;
+  }
+
   .place__paragraph {
     font-size: 16px;
   }
 
- .place .place__paragraph:first-child {
+  .place .place__paragraph:first-child {
     margin-bottom: 25px;
   }
 
@@ -262,6 +318,27 @@
   .place__website {
     display: none;
   }
+
+  .banner {
+    padding: 8vh 4vh;
+    margin: 41px 0 64px;
+  }
+
+  .banner__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .banner__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 16px;
+    white-space: unset;
+  }
+
+  .banner:hover:before {
+    display: none;
+  }
   
   .footer {
     flex-direction: column;
@@ -271,7 +348,6 @@
   }
 
   .footer__links {
-    /* flex-direction: column; */
     display: block;
     margin-bottom: 16px;
   }
