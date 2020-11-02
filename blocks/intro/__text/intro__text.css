@@ -5,3 +5,21 @@
   line-height: 1.63;
   margin: 40px auto 33px 0;
   }
+
+  @media (min-width: 1280px) {
+    .intro__text {
+      max-width: 690px;
+    }
+  }
+
+  @media (max-width: 1279px) {
+    .intro__text {
+      max-width: 690px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .intro__text {
+      margin-bottom: 34px;
+    }
+  }

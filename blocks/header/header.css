@@ -5,3 +5,16 @@
   margin: 28px auto 0;
   padding: 0 48px 0;
 }
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 0 24px 0;  
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin: 16px auto 0;
+    padding: 0 16px 0;
+  }
+}

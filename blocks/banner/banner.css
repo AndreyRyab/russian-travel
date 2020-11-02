@@ -22,3 +22,43 @@
   opacity: 0.3;
   transition: opacity 0.3s ease;
 }
+
+@media (min-width: 1280px) {
+  .banner:hover:before {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1279px) {
+  .banner {
+    padding: 30vh 0;
+  }
+  
+  .banner:hover:before {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1023px) {
+  .banner {
+    margin: 90px 0 88px;
+    padding: 24vh 0;
+  }
+
+  .banner:hover:before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 8vh 4vh;
+    margin: 41px 0 64px;
+  }
+
+  .banner:hover:before {
+    display: none;
+  }
+}

@@ -3,3 +3,9 @@
   box-sizing: border-box;
   width: 176px;
 }
+
+@media (max-width: 767px) {
+  .header__logo {
+    width: 142px;
+  }
+}
