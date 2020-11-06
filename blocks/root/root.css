@@ -8,3 +8,11 @@
   background-color: #2A2C2F;
   color: #FFFFFF;
 }
+
+@media (max-width: 767px) {
+  .root {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  }
+}
