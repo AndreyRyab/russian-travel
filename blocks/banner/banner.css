@@ -5,6 +5,15 @@
   align-items: center;
   margin: 92px auto;
   position: relative;
+  /*   Марина, спасибо за помощь!
+  Единственное, что работает, - жёстко задать высоту в пикселях.
+  Сейчас на брейкпоинтах выглядит, как на макете. Я не понимаю,
+  почему не удаётся сделать в относительных единицах.
+  Видимо, потому что контейнер не заполнен. Тогда бы выручили
+  паддинги, но вы запретили их использовать. Уже всю голову сломал.
+  Надеюсь, этот вариант пройдёт.
+  Ещё раз спасибо - за терпение.
+  */
   height: 740px;
   box-sizing: border-box;
   background-image: url(../../images/banner-img.jpg);
@@ -33,12 +42,13 @@
 
 @media (max-width: 1279px) {
   .banner {
-    height: 62vh;
+    height: 640px;
   }
 }
 
 @media (max-width: 1023px) {
   .banner {
+    height: 480px;
     margin: 90px 0 88px;
   }
   .banner:hover:before {
@@ -48,6 +58,7 @@
 
 @media (max-width: 767px) {
   .banner {
+    height: 200px;
     margin: 41px 0 64px;
   }
 }
